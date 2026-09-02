@@ -4,7 +4,9 @@
 ;Import lib
 #Include "lib/HandleSetting.ahk"
 #Include "lib/FunctionHelper.ahk"
+#Include "lib/HandleTheThang.ahk"
 #Include "lib/PostMHL.ahk"
+#Include "lib/VanChuyenBang.ahk"
 
 ; --- CÀI ĐẶT CẤU HÌNH HỆ THỐNG ---
 InstallMouseHook()
@@ -24,11 +26,34 @@ SetControlDelay(-1)
 
 q::{
     ;OpenFilmGroup()
-    ChangeUser()
+    ;ChangeUser()
+    ;ClaimTheThang()
+    ;Click 1506, 473
+    VanChuyenBang()
 }
 
 e::{
 PostMHL()
+}
+
+r::{
+    Click 1509, 822 ;Click vào "Chế Tạo"
+    Sleep(100)
+    Click 566, 823 ;Click vào "Thiết kế tạo hình"
+    Sleep(300)
+    Click 1853, 984 ;Click vào "Tải lên"
+    Sleep(300)
+    Click 1598, 843 ;Click vào "Xác nhận tải lên"
+    Sleep(800)
+    ; Nhấn 3 lần Esc để thoát ra ngoài
+    Send("{Esc}")
+    Sleep(300)
+    Send("{Esc}")
+    Sleep(300)
+    Send("{Esc}")
+    Sleep(300)
+    ; ------------------------
+
 }
 
 #HotIf

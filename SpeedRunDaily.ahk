@@ -4,6 +4,7 @@
 ;Import lib
 #Include "lib/HandleSetting.ahk"
 #Include "lib/FunctionHelper.ahk"
+#Include "lib/PostMHL.ahk"
 
 ; --- CÀI ĐẶT CẤU HÌNH HỆ THỐNG ---
 InstallMouseHook()
@@ -24,6 +25,10 @@ SetControlDelay(-1)
 q::{
     ;OpenFilmGroup()
     ChangeUser()
+}
+
+e::{
+PostMHL()
 }
 
 #HotIf

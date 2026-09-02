@@ -5,7 +5,7 @@ NhanVanChuyenBang(){
         Loop {
             me := FastPixelSearch(774, 69, 1, 1)
             if (me.Search(0xffffff)) {  ; Nếu tìm thấy
-                Sleep(200)
+                VanChuyenBang()
                 return 0
             }
             Click 1506, 473 ;Click vào "Vận Chuyển Bang"

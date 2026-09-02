@@ -19,6 +19,11 @@ SetWinDelay(-1)
 SetControlDelay(-1)
 
 
-;q::{
-;ChangeUser()
-;}
+#HotIf WinActive("ahk_class UnityWndClass")
+
+q::{
+    ;OpenFilmGroup()
+    ChangeUser()
+}
+
+#HotIf

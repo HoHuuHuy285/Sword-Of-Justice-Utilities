@@ -4,8 +4,7 @@
 ;Import lib
 #Include "lib/HandleSetting.ahk"
 #Include "lib/FunctionHelper.ahk"
-#Include "lib/HandleTheThang.ahk"
-#Include "lib/PostMHL.ahk"
+#Include "lib/HandleTheThangAndPostMHL.ahk"
 #Include "lib/VanChuyenBang.ahk"
 #Include "lib/PostMauNhuom.ahk"
 
@@ -25,12 +24,17 @@ SetControlDelay(-1)
 
 #HotIf WinActive("ahk_class UnityWndClass")
 
+1::
+{
+    ClaimTheThangAndPostMHL()
+}
+
+c::{
+    ChangeUser()
+}
+
 q::{
-    ;OpenFilmGroup()
-    ;ChangeUser()
-    ;ClaimTheThang()
-    ;Click 1506, 473
-    VanChuyenBang()
+    OpenFilmGroup()
 }
 
 e::{
@@ -42,7 +46,7 @@ r::{
     Sleep(100)
     Click 566, 823 ;Click vào "Thiết kế tạo hình"
     PostMauNhuom()
-    PostMHL()
+    ClaimTheThangAndPostMHL()
     Send("{f}")
 }
 

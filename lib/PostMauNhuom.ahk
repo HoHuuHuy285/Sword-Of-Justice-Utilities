@@ -22,6 +22,8 @@ WaitProcessDone(){
         Loop {
             me := FastPixelSearch(1814,819, 1, 1)
             if (me.Search(0xffffff)) {
+                Sleep(350) ;Ngoại lệ khi xác nhận tải lên chưa load được
+
                 ; Nhấn 3 lần Esc để thoát ra ngoài
                 Send("{Esc}")
                 Sleep(200)

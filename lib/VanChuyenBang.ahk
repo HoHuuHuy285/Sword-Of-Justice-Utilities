@@ -26,7 +26,7 @@ VanChuyenBang() {
                 Click 1646,905
                 return 0
             }
-            Click 774, 69 ;Click vào "Nộp Vật Phẩm"
+            Click 1579, 751 ;Click vào "Nộp Vật Phẩm"
             if (A_TickCount - l_Start >= 2000)
                 return 2
         }

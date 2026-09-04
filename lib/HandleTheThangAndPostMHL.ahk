@@ -5,9 +5,9 @@ ClaimTheThangAndPostMHL(){
         Loop {
             me := FastPixelSearch(1523, 938, 1, 1)
             if (me.Search(0x011120)) {  ; Nếu tìm thấy
-                Click 1553, 915 ;Click vào "Quay cùng kiểu"
+                Click 1553, 915 ;Click vào "Nhận"
                 Sleep(300)
-                Click 1553, 915 ;Click vào "Áp Dụng"
+                Click 1553, 915 ;Click vào "Nhấn vào bất kỳ để thoát"
                 Sleep(300)
 
                 PostMHL()

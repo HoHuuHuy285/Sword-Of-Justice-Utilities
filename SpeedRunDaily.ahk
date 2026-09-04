@@ -7,6 +7,7 @@
 #Include "lib/HandleTheThangAndPostMHL.ahk"
 #Include "lib/VanChuyenBang.ahk"
 #Include "lib/PostMauNhuom.ahk"
+#Include "lib/AcceptDongTacDoi.ahk"
 
 ; --- CÀI ĐẶT CẤU HÌNH HỆ THỐNG ---
 InstallMouseHook()
@@ -24,9 +25,12 @@ SetControlDelay(-1)
 
 #HotIf WinActive("ahk_class UnityWndClass")
 
-1::
-{
+1::{
     ClaimTheThangAndPostMHL()
+}
+
+2::{
+    AcceptDongTacDoi()
 }
 
 c::{
@@ -47,7 +51,7 @@ r::{
     Click 566, 823 ;Click vào "Thiết kế tạo hình"
     PostMauNhuom()
     ClaimTheThangAndPostMHL()
-    Send("{f}")
+    ;Send("{f}")
 }
 
 #HotIf

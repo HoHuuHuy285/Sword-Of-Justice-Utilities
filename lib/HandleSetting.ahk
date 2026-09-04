@@ -2,7 +2,7 @@
 
 OpenFilmGroup(){
     Send("{Esc}")
-    Sleep(150)
+    Sleep(200) ; Không thể thấp hơn nữa ( * )
     Click 1520, 234
     l_Start := A_TickCount
         Loop {
@@ -20,7 +20,7 @@ OpenFilmGroup(){
 
 ChangeUser(){
     Send("{Esc}")
-    Sleep(150)
+    Sleep(200) ; Không thể thấp hơn nữa ( * )
     Click 1860, 640 ;Click icon "Cài Đặt
     Sleep(300)
     Click 884, 305 ;Click Chuyển đổi nhân vật

@@ -43,7 +43,7 @@ PostMHL(){
                 Sleep(300) ;Chờ một chút để ổn định giao diện
                 return 0
             }
-            if (A_TickCount - l_Start >= 1500)
+            if (A_TickCount - l_Start >= 2000) ;1500ms bị lỗi và tăng thời gian lên 2000
                 return 2
         }
 }

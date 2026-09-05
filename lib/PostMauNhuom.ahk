@@ -7,7 +7,7 @@ PostMauNhuom() {
             if (me.Search(0xffffff)) {  ; Nếu tìm thấy
                 Sleep(300)
                 Click 1853, 984 ;Click vào "Tải lên"
-                Sleep(300)
+                Sleep(450) ;300ms nhanh quá có trường hợp sẽ miss , để lên 450ms
                 Click 1598, 843 ;Click vào "Xác nhận tải lên"
                 WaitProcessDone()
                 return 0
